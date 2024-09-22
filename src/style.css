@@ -1,0 +1,22 @@
+
+.search-box {
+  border: 2px solid rgb(174, 187, 255);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 600px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 244, 193);
+}
+
+.country-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;    
+}
+
+.country-list li {
+  padding: 5px;
+}
