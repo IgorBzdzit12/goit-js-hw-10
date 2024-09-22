@@ -1,7 +1,5 @@
 import { fetchCountries } from './fetchCountries.js';
 
-var debounce = require('lodash.debounce');
-
 function clearCountryList() {
     var list = document.querySelector('.country-list');
     list.innerHTML = '';
@@ -62,7 +60,7 @@ function handleResponseData(data) {
         renderCountryCard(data);
     }
 }
-
+const debounce = _.debounce
 document.querySelector('.search-box').addEventListener('input', debounce(function() {
     console.log('search button pressed');
     var name = document.querySelector('.search-box').value.trim();
