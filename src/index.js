@@ -1,4 +1,3 @@
-import Notiflix from 'notiflix';
 import { fetchCountries } from './fetchCountries.js';
 
 var debounce = require('lodash.debounce');
@@ -78,5 +77,7 @@ document.querySelector('.search-box').addEventListener('input', debounce(functio
     })
     .catch(error => {
         Notiflix.Notify.failure('Oops, there is no country with that name');
+        clearCountryCard();
+        clearCountryList();
     })
 }, 300));
